@@ -25,7 +25,7 @@ git push origin master
 6. Access the workspace again to force the dockerfile changes and install heroku
 
 URL should match the following pattern:  
-https://gitpod.io/#https:github.com/[my_github_username_here]/finstagram
+https://gitpod.io/#https://github.com/[my_github_username_here]/finstagram
 
 7. check that heroku has been properly installed with the command in your terminal:
 
