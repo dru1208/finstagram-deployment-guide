@@ -75,6 +75,16 @@ heroku run bundle exec rake db:migrate
 
 17. In the dashboard of heroku, you can find the link to your app with the button "Open App" (should be in the top right of the dashboard)
 
+18. After you open your application, you may realize that your posts are missing. This is because the database that we were working with previously was on our Gitpod workspace, but now we're using a brand new database that is linked to heroku. In order to populate your database with data, create a file in the db directory called seeds.rb, and fill it in with the values in the seeds.rb file of this repository. Run the following commands to populate your database:
+
+```
+git add .
+git commit -m "created seeds file for db"
+git push origin master
+git push heroku
+heroku run bundle exec rake db:seed
+```
+
 
 # Updating the App
 
