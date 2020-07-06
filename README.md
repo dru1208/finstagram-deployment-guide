@@ -6,11 +6,11 @@
 .gitpod.Dockerfile  
 .gitpod.yml  
 
-Fill out these files based on the contents of the files of the same name in this repo
+Fill out these files based on the contents of the files of the same name in this repo (the files at the top of this guide)
 
-2. Update your Gemfile to match the Gemfile in this repo
+2. Update your Gemfile to match the Gemfile in this repo (the files at the top of this guide)
 
-3. Update your config/database.rb file to match the database.rb file in this repo
+3. Update your config/database.rb file to match the database.rb file in this repo (the files at the top of this guide)
 
 4. Run bundle install in the terminal
 
@@ -21,6 +21,13 @@ git add .
 git commit -m "changes for deployment"
 git push origin master
 ```
+
+Note: if you receive an error after running git push origin master (access denied), go to the following url:
+
+https://gitpod.io/access-control/
+
+Select the check box "write public repos", press the update button, and re-run git push origin master in your terminal
+
 
 6. Access the workspace again to force the dockerfile changes and install heroku
 
@@ -75,7 +82,7 @@ heroku run bundle exec rake db:migrate
 
 17. In the dashboard of heroku, you can find the link to your app with the button "Open App" (should be in the top right of the dashboard)
 
-18. After you open your application, you may realize that your posts are missing. This is because the database that we were working with previously was on our Gitpod workspace, but now we're using a brand new database that is linked to heroku. In order to populate your database with data, create a file in the db directory called seeds.rb, and fill it in with the values in the seeds.rb file of this repository. Run the following commands to populate your database:
+18. After you open your application, you may realize that your posts are missing. This is because the database that we were working with previously was on our Gitpod workspace, but now we're using a brand new database that is linked to heroku. In order to populate your database with data, create a file in the db directory called seeds.rb, and fill it in with the values in the seeds.rb file of this repository (top of the page). Run the following commands in your terminal to populate your database:
 
 ```
 git add .
