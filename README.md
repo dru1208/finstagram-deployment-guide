@@ -45,7 +45,7 @@ heroku --version
 9. in the terminal of gitpod, run the following command and log in to heroku with your credentials
 
 ```
-heroku login
+heroku login -i
 ```
 
 10. run the following command in the terminal to create the heroku project
