@@ -2,9 +2,10 @@
 
 1. In the root of your repository, create the two following files:
 
-
-.gitpod.Dockerfile  
-.gitpod.yml  
+```
+.gitpod.Dockerfile
+.gitpod.yml
+```
 
 Fill out these files based on the contents of the files of the same name in this repo (the files at the top of this guide)
 
@@ -12,9 +13,9 @@ Fill out these files based on the contents of the files of the same name in this
 
 3. Update your config/database.rb file to match the database.rb file in this repo (the files at the top of this guide)
 
-4. Run bundle install in the terminal
+4. Copy `bundle install` into the terminal and run it (press Enter).
 
-5. Commit the changes, and push to the master branch of the repository
+5. Commit the changes, and push to the master branch of the repository by using the following commands in your terminal window. Copy and paste them each individually.
 
 ```
 git add .
@@ -22,19 +23,18 @@ git commit -m "changes for deployment"
 git push origin master
 ```
 
-Note: if you receive an error after running git push origin master (access denied), go to the following url:
+Note: if you receive an error after running `git push origin master` (access denied), go to the following url:
 
 https://gitpod.io/access-control/
 
 Select the check box "write public repos", press the update button, and re-run git push origin master in your terminal
 
-
 6. Access the workspace again to force the dockerfile changes and install heroku
 
-URL should match the following pattern:  
+URL should match the following pattern:
 https://gitpod.io/#https://github.com/[my_github_username_here]/finstagram
 
-7. check that heroku has been properly installed with the command in your terminal:
+7. Check that heroku has been properly installed with the command in your terminal:
 
 ```
 heroku --version
