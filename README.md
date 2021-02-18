@@ -28,22 +28,22 @@ git push origin master
 
 Note: if you receive an error after running `git push origin master` (access denied), go to the following url:
 
-https://gitpod.io/access-control/
+`https://gitpod.io/access-control/`
 
 Select the check box "write public repos", press the update button, and re-run git push origin master in your terminal
 
-6. Access the workspace again to force the dockerfile changes and install heroku
+6. Now close your Gitpod tabs and access your Gitpod again by using the below url, but be sure to add your username from (GitHub)[https://github.com] into the URL before you press `ENTER`
 
-URL should match the following pattern:
-https://gitpod.io/#https://github.com/[my_github_username_here]/finstagram
+The URL/address that you paste into your browser window should match the following pattern:
+`https://gitpod.io/#https://github.com/*[my_github_username_here]*/finstagram`
 
-7. Check that heroku has been properly installed with the command in your terminal:
+7. Check that heroku has been properly installed by running the following command in your Gitpod terminal:
 
 ```
 heroku --version
 ```
 
-8. create a heroku account on heroku.com
+8. Create a heroku account on (heroku.com)[https://heroku.com]
 
 9. in the terminal of gitpod, run the following command and log in to heroku with your credentials
 
@@ -57,15 +57,13 @@ heroku login -i
 heroku create
 ```
 
-11. Access the heroku dashboard with the following url:
-
-https://dashboard.heroku.com/apps
+11. Access the heroku dashboard with the following url: `https://dashboard.heroku.com/apps`
 
 12. Click on the newly created project, select the resources tab, and then under Add-ons, use the search bar to add "Heroku Postgres" with the free plan
 
-13. Click on heroku postgres to view the details, under settings tab, click on View Credentials in the row that is for Database Credentials. Copy the URI (should look something like postgres://[some string of text here])
+13. Click on heroku postgres to view the details, under settings tab, click on View Credentials in the row that is for Database Credentials. Copy the URI (should look something like `postgres://[some string of text here]`)
 
-14. Inside the config/database.rb file, paste the copied URI into the database_url string (line 13)
+14. Inside the `config/database.rb` file, paste the copied `URI` into the database_url string (line 13)
 
 15. Run the following commands in your terminal
 
@@ -80,6 +78,7 @@ git push origin master
 
 ```
 git push heroku
+heroku run bundle install
 heroku run bundle exec rake db:migrate
 ```
 
@@ -95,7 +94,6 @@ git push heroku
 heroku run bundle exec rake db:seed
 ```
 
-
 # Updating the App
 
 If you've made changes to your code, run the following commands in your terminal
@@ -107,8 +105,11 @@ git push origin master
 git push heroku
 ```
 
-If these involve any changes to the database, run the following command
+If you make changes to the database in your Gitpod in the future such as updating posts or adding posts, etc then you must run the following command to update Heroku's database.
 
 ```
 heroku run rake db:migrate
 ```
+
+* Deleting all Users; go into tux on your gitpod and type the following command and it'll delete all users.
+`FinstagramPost.where(user_id: 1).destroy_all`
