@@ -1,3 +1,6 @@
+# IMPORTANT
+*Please do not make any changes directly to your Github EVER. All the work asked of you below must be done form your Gitpod and/or Heroku*
+
 # Deployment
 
 1. In the root of your repository, create the two following files:
