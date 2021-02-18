@@ -80,6 +80,7 @@ git push origin master
 
 ```
 git push heroku
+heroku run bundle install
 heroku run bundle exec rake db:migrate
 ```
 
