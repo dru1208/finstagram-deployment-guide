@@ -32,7 +32,7 @@ Note: if you receive an error after running `git push origin master` (access den
 
 Select the check box "write public repos", press the update button, and re-run git push origin master in your terminal
 
-6. Now close your Gitpod tabs and access your Gitpod again by using the below url, but be sure to add your username from (GitHub)[https://github.com] into the URL before you press `ENTER`
+6. Now close your Gitpod tabs and access your Gitpod again by using the below url, but be sure to add your username from [GitHub](https://github.com) into the URL before you press `ENTER`
 
 The URL/address that you paste into your browser window should match the following pattern:
 `https://gitpod.io/#https://github.com/*[my_github_username_here]*/finstagram`
@@ -43,7 +43,7 @@ The URL/address that you paste into your browser window should match the followi
 heroku --version
 ```
 
-8. Create a heroku account on (heroku.com)[https://heroku.com]
+8. Create a heroku account on [heroku.com](https://heroku.com)
 
 9. in the terminal of gitpod, run the following command and log in to heroku with your credentials
 
