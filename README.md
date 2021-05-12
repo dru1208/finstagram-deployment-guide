@@ -113,3 +113,9 @@ heroku run rake db:migrate
 
 * Deleting all Users; go into tux on your gitpod and type the following command and it'll delete all users.
 `FinstagramPost.where(user_id: 1).destroy_all`
+
+
+# Resources
+- [What is Docker!?](https://opensource.com/resources/what-docker)
+- [What does db:migrate do?](https://stackoverflow.com/questions/1007187/exactly-what-does-rake-dbmigrate-do#:~:text=Actually%20rake%20db%3Amigrate%20just,caring%20about%20the%20previouse%20ones.&text=their%20version%20is%20not%20contained,when%20running%20db%3Amigrate%20)
+- [What is Rake?](https://www.rubyguides.com/2019/02/ruby-rake/)
