@@ -3,7 +3,7 @@
 
 # Deployment
 
-1. In the root of your repository, create the two following files:
+1. In the [root](https://github.com/dru1208/finstagram-deployment-guide/blob/master/root.md) (What is the root?) of your repository, create the two following files:
 
 ```
 .gitpod.Dockerfile
