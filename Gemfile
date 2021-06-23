@@ -8,6 +8,7 @@ gem 'activerecord', '~> 4.2.0'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
+gem 'bigdecimal', '1.3.5'
 
 gem 'puma'
 gem 'tux'
