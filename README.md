@@ -3,14 +3,14 @@
 
 # Deployment
 
-1. In the [root](https://github.com/dru1208/finstagram-deployment-guide/blob/master/root-of-files.png) (What is the root?) of your repository, create the two following files:
+1. In the [root](https://github.com/dru1208/finstagram-deployment-guide/blob/master/root-of-files.png) (What is the root?) of your repository, create the two following files below *if* they don't already exist:
 
 ```
 .gitpod.Dockerfile
 .gitpod.yml
 ```
 
-Fill out these files based on the contents of the files of the same name in this repo (the files at the top of this guide)
+Open the above named files from the repo above and add their contents to your gitpod where you created or already had the files of the same name.
 
 2. Update your Gemfile to match the Gemfile in this repo (the files at the top of this guide)
 
