@@ -35,7 +35,7 @@ Select the check box "write public repos", press the update button, and re-run g
 6. Now close your Gitpod tabs and access your Gitpod again by using the below url, but be sure to add your username from [GitHub](https://github.com) into the URL before you press `ENTER`
 
 The URL/address that you paste into your browser window should match the following pattern:
-`https://gitpod.io/#https://github.com/*[my_github_username_here]*/finstagram`
+`https://gitpod.io/#https://github.com/*[my_github_username_here]*/finstagram` ***DELETE THE `*[` and `]*` when you add in your username
 
 7. Check that heroku has been properly installed by running the following command in your Gitpod terminal:
 
