@@ -14,7 +14,7 @@ Open the above named files from the repo above and add their contents to your gi
 
 2. Update your Gemfile to match the Gemfile in this repo (the files at the top of this guide)
 
-3. Update your config/database.rb file to match the database.rb file in this repo (the files at the top of this guide)
+3. Update your gitpod `config/database.rb` file to match the github `database.rb` file in this repo (the files at the top of this guide)
 
 4. Copy `bundle install` into the terminal and run it (press Enter).
 
@@ -59,9 +59,9 @@ heroku create
 
 11. Access the heroku dashboard with the following url: `https://dashboard.heroku.com/apps`
 
-12. Click on the newly created project, select the resources tab, and then under Add-ons, use the search bar to add "Heroku Postgres" with the free plan
+12. Click on the newly created project, select the resources tab, and then under Add-ons, use the search bar to add **Heroku Postgres** with the free plan
 
-13. Click on heroku postgres to view the details, under settings tab, click on View Credentials in the row that is for Database Credentials. Copy the URI (should look something like `postgres://[some string of text here]`)
+13. Click on heroku postgres to view the details, under settings tab, click on **View Credentials** in the row that is for **Database Credentials**. Copy the `URI` (should look something like `postgres://[some string of text here]`)
 
 14. Inside the `config/database.rb` file, paste the copied `URI` into the database_url string (line 13)
 
@@ -82,7 +82,7 @@ heroku run bundle install
 heroku run bundle exec rake db:migrate
 ```
 
-17. In the dashboard of heroku, you can find the link to your app with the button "Open App" (should be in the top right of the dashboard). After you open your application, you may realize that your posts are missing. This is because the database that we were working with previously was on our Gitpod workspace and now we're using a brand new database on Heroku, which is brand new and doesn't have any data yet.
+17. In the dashboard of heroku, you can find the link to your app with the button **Open App** (should be in the top right of the dashboard). After you open your application, you may realize that your posts are missing. This is because the database that we were working with previously was on our Gitpod workspace and now we're using a brand new database on Heroku, which is brand new and doesn't have any data yet.
 
 18. In order to populate your database with data, create a file in the `db directory` called `seeds.rb` ex. *db/seeds.rb* and fill it in with the values found in the seeds.rb file at the top of *this* page. 
 
